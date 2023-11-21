@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap");
+:root {
+  --Purple: hsl(259, 100%, 65%);
+  --Light_red: hsl(0, 100%, 67%);
+  --White: hsl(0, 0%, 100%);
+  --Off_white: hsl(0, 0%, 94%);
+  --Light_grey: hsl(0, 0%, 86%);
+  --Smokey_grey: hsl(0, 1%, 44%);
+  --Off_black: hsl(0, 0%, 8%);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--Off_white);
+}
+
+.container {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 2rem 1rem;
+}
+.container .card {
+  min-width: 30rem;
+  width: 90%;
+  padding: 3.5rem 2rem 3.3rem 2rem;
+  background-color: var(--White);
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+  border-bottom-right-radius: 8rem;
+}
+.container .card .formulario {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+}
+.container .card .formulario .box-input {
+  display: flex;
+  -moz-column-gap: 1.4rem;
+       column-gap: 1.4rem;
+  padding-bottom: 2.9rem;
+}
+.container .card .formulario .box-input .container-input {
+  width: 7.9rem;
+}
+.container .card .formulario .box-input .container-input .title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 0.2rem;
+  color: var(--Smokey_grey);
+}
+.container .card .formulario .box-input .container-input .input-date {
+  cursor: pointer;
+  margin-top: 0.6rem;
+  padding-left: 1.2rem;
+  width: 100%;
+  height: 4.3rem;
+  border: 1px solid;
+  color: var(--Off_black);
+  border-color: var(--Light_grey);
+  border-radius: 0.3rem;
+  font-size: 1.6rem;
+  font-weight: 800;
+}
+.container .card .formulario .box-input .container-input .input-date::-moz-placeholder {
+  color: var(--Smokey_grey);
+}
+.container .card .formulario .box-input .container-input .input-date::placeholder {
+  color: var(--Smokey_grey);
+}
+.container .card .formulario .box-input .container-input .input-date:focus {
+  outline: none;
+  border-color: var(--Purple);
+}
+.container .card .formulario .line {
+  border: 0.1rem solid var(--Off_white);
+  transform: translateY(2.6rem);
+  width: 100%;
+}
+.container .card .formulario button {
+  align-self: center;
+  z-index: 1;
+  position: relative;
+  border-radius: 50%;
+  width: 5rem;
+  height: 5rem;
+  background-image: url(../assets/images/icon-arrow.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 2.3rem;
+  border: none;
+  background-color: var(--Purple);
+}
+.container .card .formulario button:hover {
+  background-color: var(--Off_black);
+}
+.container .card .container-result {
+  margin-top: 2rem;
+}
+.container .card .container-result .box-time {
+  display: flex;
+  -moz-column-gap: 0.6rem;
+       column-gap: 0.6rem;
+}
+.container .card .container-result .box-time .result, .container .card .container-result .box-time .text {
+  font-size: 4rem;
+  font-style: italic;
+}
+.container .card .container-result .box-time .result {
+  color: var(--Purple);
+}
+.container .card .container-result .box-time .text {
+  color: var(--Off_black);
+  font-weight: 800;
+  padding-top: 0.1rem;
+}
+
+@media (min-width: 426px) {
+  .container .card {
+    max-width: 50rem;
+    padding: 3.5rem 3.3rem 2.6rem 3.8rem;
+  }
+  .container .card .formulario .box-input {
+    padding-bottom: 0.5rem;
+  }
+  .container .card .formulario .box-input .container-input {
+    width: 9.3rem;
+  }
+  .container .card .formulario .box-input .container-input .title {
+    letter-spacing: 0.3rem;
+  }
+  .container .card .formulario button {
+    width: 5.6rem;
+    height: 5.6rem;
+    align-self: flex-end;
+  }
+  .container .card .container-result {
+    margin-top: 0;
+  }
+  .container .card .container-result .box-time .result, .container .card .container-result .box-time .text {
+    font-size: 5rem;
+  }
+}/*# sourceMappingURL=style.css.map */

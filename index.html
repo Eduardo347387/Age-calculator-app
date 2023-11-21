@@ -5,33 +5,51 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="css/style.css">
   <title>Frontend Mentor | Age calculator app</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
-
-  Day
-  DD
-
-  Month
-  MM
-
-  Year
-  YYYY
-
-  -- years
-  -- months
-  -- days
+  <main class="container">
+    <div class="card">
+      <form class="formulario">
+        <div class="box-input">
+          <div class="container-input">
+            <h1 class="title">Day</h1>
+            <input class="input-date" type="text" placeholder="DD">
+          </div>
   
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+          <div class="container-input">
+            <h1 class="title">Month</h1>
+            <input class="input-date" type="text" placeholder="MM">
+          </div>  
+  
+          <div class="container-input">
+            <h1 class="title">Year</h1>
+            <input class="input-date" type="text" placeholder="YYYY">
+          </div>
+        </div>
+        <hr class="line">
+        <button type="submit" role="submit">
+        </button>
+      </form>
+
+      <div class="container-result">
+        <div class="box-time">
+          <h2 id="years" class="result">- -</h2>
+          <p class="text">years</p>
+        </div>
+        
+        <div class="box-time">
+          <h2 id="months"  class="result">- -</h2>
+          <p class="text">months</p>
+        </div>
+
+        <div class="box-time">
+          <h2 id="days"  class="result">- -</h2>
+          <p class="text">days</p>
+        </div>
+      </div>
+    </div>
+  </main>
 </body>
 </html>
