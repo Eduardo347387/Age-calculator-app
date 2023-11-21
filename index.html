@@ -11,45 +11,45 @@
 <body>
   <main class="container">
     <div class="card">
-      <form class="formulario">
+      <form id="form" class="formulario">
         <div class="box-input">
           <div class="container-input">
             <h1 class="title">Day</h1>
-            <input class="input-date" type="text" placeholder="DD">
+            <input id="day" class="input-date" type="text" placeholder="DD">
           </div>
   
           <div class="container-input">
             <h1 class="title">Month</h1>
-            <input class="input-date" type="text" placeholder="MM">
+            <input id="months" class="input-date" type="text" placeholder="MM">
           </div>  
   
           <div class="container-input">
             <h1 class="title">Year</h1>
-            <input class="input-date" type="text" placeholder="YYYY">
+            <input id="year" class="input-date" type="text" placeholder="YYYY">
           </div>
         </div>
         <hr class="line">
-        <button type="submit" role="submit">
-        </button>
+        <button type="submit" role="submit"></button>
       </form>
 
       <div class="container-result">
         <div class="box-time">
-          <h2 id="years" class="result">- -</h2>
+          <h2 id="resul-years" class="result">- -</h2>
           <p class="text">years</p>
         </div>
         
         <div class="box-time">
-          <h2 id="months"  class="result">- -</h2>
+          <h2 id="resul-months"  class="result">- -</h2>
           <p class="text">months</p>
         </div>
 
         <div class="box-time">
-          <h2 id="days"  class="result">- -</h2>
+          <h2 id="result-days"  class="result">- -</h2>
           <p class="text">days</p>
         </div>
       </div>
     </div>
   </main>
+  <script src="js/app.js"></script>
 </body>
 </html>
