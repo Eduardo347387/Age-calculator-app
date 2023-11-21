@@ -126,7 +126,7 @@ function alertaText(referencia,mensaje){
         const $paragraph =  document.createElement('P')
         $paragraph.classList.add('msError')
         $paragraph.style.color = '#e54a4a'
-        $paragraph.style.fontSize = '0.8rem'
+        $paragraph.style.fontSize = '1rem'
         $paragraph.style.fontStyle = 'italic'
         $paragraph.style.paddingTop = '0.3rem'
         $paragraph.textContent = mensaje;
